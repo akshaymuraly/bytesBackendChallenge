@@ -10,7 +10,11 @@ dbConnection();
 
 // ----------Router------------------------
 
+const productRouter = require("./modules/products/router/products.router");
+
 // ----------Routes------------------------
+
+app.use("/api", productRouter);
 
 // ----------ERROR HANDLER MIDDLEWARE-----------
 
